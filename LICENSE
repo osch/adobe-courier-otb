@@ -1,0 +1,71 @@
+This repository contains two distinct kinds of works under different
+licenses:
+
+================================================================
+1. The Adobe Courier bitmap font data (*.otb files)
+================================================================
+
+The bitmap glyph data originates from the Adobe Courier fonts as
+distributed with the X Window System (X.Org `font-adobe-100dpi` and
+`font-adobe-75dpi` source packages, redistributed by virtually every
+Linux/BSD distribution as `xfonts-100dpi` / `xorg-fonts-100dpi` /
+`xorg-x11-fonts-100dpi` and equivalents for the 75dpi set).
+
+The following copyright notice and permission notice is taken verbatim
+from the `COPYING` file shipped in the upstream X.Org `font-adobe-100dpi`
+and `font-adobe-75dpi` source tarballs and applies to all glyph data in
+the `.otb` files of this repository:
+
+    Copyright 1984-1989, 1994 Adobe Systems Incorporated.
+    Copyright 1988, 1994 Digital Equipment Corporation.
+
+    Adobe is a trademark of Adobe Systems Incorporated which may be
+    registered in certain jurisdictions.
+    Permission to use these trademarks is hereby granted only in
+    association with the images described in this file.
+
+    Permission to use, copy, modify, distribute and sell this software
+    and its documentation for any purpose and without fee is hereby
+    granted, provided that the above copyright notices appear in all
+    copies and that both those copyright notices and this permission
+    notice appear in supporting documentation, and that the names of
+    Adobe Systems and Digital Equipment Corporation not be used in
+    advertising or publicity pertaining to distribution of the software
+    without specific, written prior permission.  Adobe Systems and
+    Digital Equipment Corporation make no representations about the
+    suitability of this software for any purpose.  It is provided "as
+    is" without express or implied warranty.
+
+This is a permissive, MIT/X11-style license (sometimes classified as
+"Historical Permission Notice and Disclaimer", HPND).
+
+The above copyright notice is also embedded inside every `.otb` file in
+the `name` table (nameID 0, "Copyright"), and the full permission
+notice above is embedded in the `name` table (nameID 13, "License
+Description"), so each `.otb` file is self-contained with respect to
+its license.
+
+The embedded fields can be inspected with e.g. `otfinfo --info file.otb`.
+
+The OTB1 and OTB2 variants are derivatives that adjust font metrics
+only (ascent / descent / underline position / underline thickness);
+no glyph bitmap is modified.
+
+================================================================
+2. The build / install scripts (*.py, *.sh) and documentation
+================================================================
+
+The author places these works in the public domain. Where that is not
+legally possible, the following BSD Zero Clause License (0BSD) applies:
+
+Permission to use, copy, modify, and/or distribute this software for
+any purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL
+WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
